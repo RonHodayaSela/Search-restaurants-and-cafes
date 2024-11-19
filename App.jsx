@@ -29,6 +29,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import the screens
 import HomeScreen from './screens/HomeScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import SignupScreen from './components/SignupScreen'
 
 const Stack = createNativeStackNavigator();
 
@@ -42,6 +43,8 @@ const App = () => {
           options={{ title: 'Welcome' }}
         />
         <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen name="Signup" component={SignupScreen} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
